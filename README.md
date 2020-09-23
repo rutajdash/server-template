@@ -4,7 +4,7 @@ This is a a template for an Express Server.
 
 To use, do the following,
 
-- Replace <Project-Name>, <Org-Name>, <Repo-Name> in this file
+- Replace \<Project-Name\>, \<Org-Name\>, \<Repo-Name\> in this file
 - Complete TODOs accross all files
 - Initialise NPM and install packages
 
@@ -14,9 +14,9 @@ $ npm install --save express express-session connect-mongodb-session cookie-pars
 $ npm install --save graphql apollo-server-express graphql-iso-date graphql-type-json firebase-admin mongoose
 ```
 
-# Project <Project-Name>
+# Project \<Project-Name\>
 
-The Server Application for Monday Morning under [Project <Project-Name>](https://github.com/orgs/<Org-Name>/projects)
+The Server Application for Monday Morning under [Project \<Project-Name\>](https://github.com/orgs/\<Org-Name\>/projects)
 
 - Developed on Node.js v12 LTS
 
