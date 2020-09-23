@@ -1,0 +1,19 @@
+name: GAE_AUTODEPLOY
+
+on:
+  push:
+    branches: [production]
+
+jobs:
+  deploy:
+    name: Deploy To GCP App Engine
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '/D')"
+    steps:
+      - name: Checkout Repo (Clone) to Runner Environment
+        uses: actions/checkout@v2
+      - name: Deploy to Google App Engine
+        uses: claudiuri/deploy-gae-action@v1.2
+        with:
+          service-account: ${{secrets.GCP_APPENGINE}}
+          project-id: ${{secrets.GCP_PROJECT}}
