@@ -18,10 +18,10 @@ mongoose.set('autoIndex', false);
 const db = mongoose.connection;
 
 db.on('error', (err) => {
-  console.error(new Error('FailTell Server | MongoDB | Could not connect to database'), err);
+  console.error(new Error('<Project-Name> Server | MongoDB | Could not connect to database'), err);
 });
 db.once('open', (data) => {
-  console.info('FailTell Server | MongoDB | Database Connected', data);
+  console.info('<Project-Name> Server | MongoDB | Database Connected', data);
 });
 
 module.exports = {
