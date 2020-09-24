@@ -5,23 +5,8 @@ This is a a template for an Express Server.
 To use, do the following,
 
 - Replace \<Project-Name\>, \<Org-Name\>, \<Repo-Name\> in this file
+- Update package.json
 - Complete TODOs accross all files
-- Initialise NPM and install packages
-
-```bash
-$ npm init
-$ npm install --save express express-session connect-mongodb-session cookie-parser csurf errorhandler cors https
-$ npm install --save graphql apollo-server-express graphql-iso-date graphql-type-json firebase-admin mongoose
-$ npm install --save-dev mocha chai chai-http nodemon
-```
-
-- Add scripts to package.json
-
-```json
-"start": "SET NODE_ENV=production && node app.js",
-"test": "SET NODE_ENV=test && mocha --reporter spec",
-"start-dev": "SET NODE_ENV=development && nodemon app.js",
-```
 
 # Project \<Project-Name\>
 
